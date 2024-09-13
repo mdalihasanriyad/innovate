@@ -13,8 +13,8 @@
   <div class="px-3 lg:px-0">
     <!-- Menu bar start -->
     <div id="home" class="flex justify-around items-center gap-10 my-4">
-      <div><img src="./img/Logo.png" alt="" /></div>
-      <ul class="flex justify-center items-center gap-6">
+      <div href="#"><img src="./img/Logo.png" alt="" /></div>
+      <ul class="flex text-sm md:text-base justify-center items-center gap-6">
         <li class="menu-item"><a href="#home">Home</a></li>
         <li class="menu-item"><a href="#about">About</a></li>
         <li class="menu-item"><a href="#servics">Service</a></li>
@@ -23,16 +23,16 @@
         <li class="menu-item"><a href="#">Blog</a></li>
       </ul>
       <button
-        class="bg-sky-500 hover:bg-sky-700 duration-300 text-white/80 px-4 py-2 rounded-full font-medium"
+        class="bg-sky-500 hidden md:inline-block hover:bg-sky-700 duration-300 text-white/80 px-4 py-2 rounded-full font-medium"
       >
         Contact Us
       </button>
     </div>
     <!-- Menu bar end -->
     <!-- Banner part start -->
-    <div class="bg-[url('./img/banner1.png')] object-cover bg-no-repeat">
+    <div class="md:bg-[url('./img/banner1.png')] content-cover bg-no-repeat">
       <div class="max-w-screen-xl mx-auto p-3 lg:px-0">
-        <div class="w-[40%] ml flex flex-col gap-2 my-52">
+        <div class="md:w-[40%] ml flex flex-col gap-2 md:my-52">
           <h1 class="text-6xl font-bold">
             Expert cleaning service and affordable price
           </h1>
@@ -58,9 +58,9 @@
     <!-- Banner part end -->
     <!-- About Company start -->
     <div
-      class="flex flex-col lg:flex-row items-center justify-center gap-20 py-20 max-w-screen-xl mx-auto h-[600px] overflow-hidden"
+      class="grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-20 md:py-20 max-w-screen-xl mx-auto h-[600px] overflow-hidden"
     >
-      <div class="w-[40%] bg-gray-300 h-[400px] relative">
+      <div class="bg-gray-300 h-[400px] relative hidden md:inline-block">
         <div class="absolute right-0 bottom-0 w-72 h-72 overflow-hidden">
           <img src="./img/Shape.png" alt="shape" class="" />
         </div>
@@ -76,8 +76,8 @@
           <img src="./img/Line Element.png" alt="shape" class="" />
         </div>
       </div>
-      <div class="w-[60%] p-10 items-start">
-        <div class="w-[80%]">
+      <div class="p-10 items-start">
+        <div class="">
           <p class="mt-0 mb-2 text-green-600 font-medium">About Company</p>
           <h2 class="text-3xl font-bold mb-4 w-[80%]">
             One Stop Commercial Cleaning Company
@@ -103,12 +103,14 @@
     <!-- About company end -->
     <!-- Project section start -->
     <div class="my-10 bg-[#003173] text-white">
-      <div class="max-w-5xl mx-auto flex justify-between items-center py-10">
+      <div
+        class="max-w-5xl mx-auto grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 justify-between items-center py-10 space-y-4 md:space-y-0"
+      >
         <div class="text-center border-r-2 pr-20 border-green-500">
           <h2 class="text-3xl font-bold">12,000+</h2>
           <p>Project Done</p>
         </div>
-        <div class="text-center border-r-2 pr-20 border-green-500">
+        <div class="text-center border-r-2 lg:pr-20 pl-10 border-green-500">
           <h2 class="text-3xl font-bold">11,500+</h2>
           <p>Happy Clients</p>
         </div>
@@ -125,7 +127,7 @@
     <!-- project section end -->
     <!-- What do you sec start -->
     <div class="my-20 max-w-screen-xl mx-auto">
-      <div class="text-center w-[35%] items-center mx-auto">
+      <div class="text-center md:w-[35%] items-center mx-auto">
         <p class="text-green-600 font-medium">What we do?</p>
         <h2 class="text-3xl font-bold text-center mt-2 mb-2">
           We work many fields to clean your surrounding area
@@ -135,8 +137,10 @@
           Let our experienced cleaners do the cleaning.
         </p>
       </div>
-      <div class="flex items-center justify-center my-10 gap-10">
-        <i class="fa-solid fa-arrow-left text-2xl"></i>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center my-10 gap-10"
+      >
+        <!-- <i class="fa-solid fa-arrow-left text-2xl hidden lg:inline-block"></i> -->
         <div
           class="bg-white shadow-lg shadow-slate-300 w-80 h-72 text-center p-4"
         >
@@ -179,13 +183,15 @@
             sparkling whatever the weather.
           </p>
         </div>
-        <i class="fa-solid fa-arrow-right text-2xl"></i>
+        <!-- <i class="fa-solid fa-arrow-right text-2xl hidden lg:inline-block"></i> -->
       </div>
     </div>
     <!-- What do you sec end -->
     <!-- Why Choose Us start -->
-    <div class="max-w-screen-lg mx-auto flex gap-10 my-10">
-      <div class="w-[40%]">
+    <div
+      class="max-w-screen-lg mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:gap-10 my-10 p-4"
+    >
+      <div class="">
         <p class="text-green-600 font-medium mb-2 mt-10">Why Choose Us</p>
         <h3 class="text-4xl font-bold mb-2">
           Our Expertise Making Your Business Shine
@@ -201,10 +207,10 @@
           More about us
         </button>
       </div>
-      <div class="w-[40%] -mt-4">
+      <div class="hidden lg:inline-block -mt-4">
         <img src="./img/Image.png" alt="" />
       </div>
-      <div class="w-[20%] space-y-2">
+      <div class="space-y-2">
         <div class="bg-white shadow-lg shadow-gray-300">
           <img src="./img/ICon (3).png" alt="" />
           <p class="p-2 font-semibold">Expert Employee</p>
@@ -221,12 +227,12 @@
     </div>
     <!-- Why Choose Us end -->
     <!-- Our Successful Project start -->
-    <div class="bg-[#003173] my-24 pb-60 pt-10">
-      <div class="max-w-screen-lg mx-auto relative">
+    <div class="bg-[#003173] my-24 md:pb-60 pt-10">
+      <div class="max-w-screen-lg mx-auto relative p-4">
         <p class="text-green-600 mb-2 text-base font-medium">
           Our Successful Project
         </p>
-        <div class="flex w-full gap-10 justify-between">
+        <div class="md:flex w-full space-y-10 justify-between">
           <div class="text-5xl w-full text-white">
             <h2>Keep your vision to our latest projects.</h2>
           </div>
@@ -239,10 +245,12 @@
           </div>
         </div>
         <div
-          class="absolute grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-10"
+          class="hidden absolute lg:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-10"
         >
           <div class="relative">
-            <img src="./img/Image.png" alt="" />
+            <div class="">
+              <img src="./img/Image.png" alt="" />
+            </div>
             <div class="absolute bottom-5 bg-white/80 ml-6 rounded-md">
               <div class="px-6 py-6 text-center">
                 <h3 class="text-lg font-semibold">Furniture Cleaning</h3>
@@ -256,5 +264,143 @@
         </div>
       </div>
     </div>
+    <!-- Our Successful Project End -->
+    <!-- Latest News section start -->
+    <div
+      class="max-w-screen-md mx-auto text-center items-center justify-center mt-40 mb-24"
+    >
+      <p class="text-green-600 font-medium">Latest News</p>
+      <h2 class="text-5xl font-bold text-black mt-2">
+        We work many fields to clean your surrounding area
+      </h2>
+      <div
+        class="grid items-center justify-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-10 gap-8 p-4"
+      >
+        <div class="">
+          <div class="">
+            <div class="hidden lg:block">
+              <img src="./img/Image.png" alt="" class="w-64" />
+            </div>
+            <div class="bg-white shadow-md w-full p-4 rounded-b-md">
+              <h4 class="text-green-600 font-medium">CASETHEMES | OFFICE</h4>
+              <h3 class="text-2xl font-semibold my-2 text-start">
+                Our proprietary enables Quality.
+              </h3>
+              <p class="text-base font-medium text-start">
+                Quality service begins with quality people. Each CleanNet®
+                certified.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="rounded-md">
+            <img src="./img/Image.png" alt="" class="w-64" />
+            <div class="bg-white shadow-md w-full p-4 rounded-b-md">
+              <h4 class="text-green-600 font-medium">CASETHEMES | OFFICE</h4>
+              <h3 class="text-2xl font-semibold my-2 text-start">
+                Locate Bixol USA Office Near You.
+              </h3>
+              <p class="text-base font-medium text-start">
+                Quality service begins with quality people. Each CleanNet®
+                certified.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="rounded-md">
+            <img src="./img/Image.png" alt="" class="w-64" />
+            <div class="bg-white shadow-md w-full p-4 rounded-b-md">
+              <h4 class="text-green-600 font-medium">CASETHEMES | OFFICE</h4>
+              <h3 class="text-2xl font-semibold my-2 text-start">
+                How stay calm from the first.
+              </h3>
+              <p class="text-base font-medium text-start">
+                Quality service begins with quality people. Each CleanNet®
+                certified.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Latest News section End -->
+    <!-- Footer Start -->
+    <div class="bg-[#0B3A77]">
+      <div class="max-w-screen-lg mx-auto pt-20 pb-6 px-4">
+        <div
+          class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-10 justify-center text-white"
+        >
+          <div class="col-span-2">
+            <img src="./img/Logo.png" alt="" class="w-" />
+            <p class="opacity-70">
+              Install any demo or template with a single click. You can mix and
+              match all the demos & templates. Every demo can be turned into one
+              or multi-page.
+            </p>
+          </div>
+          <div class="">
+            <h2 class="text-xl font-semibold mb-2">Features</h2>
+            <ul class="opacity-70">
+              <ol>
+                Home
+              </ol>
+              <ol>
+                About
+              </ol>
+              <ol>
+                Benifit
+              </ol>
+              <ol>
+                Pricing
+              </ol>
+              <ol>
+                Blog
+              </ol>
+            </ul>
+          </div>
+          <div class="">
+            <h2 class="text-xl font-semibold mb-2">Products</h2>
+            <ul class="opacity-70">
+              <ol>
+                Task Management
+              </ol>
+              <ol>
+                Company growth
+              </ol>
+              <ol>
+                Time tracking
+              </ol>
+            </ul>
+          </div>
+          <div class="">
+            <h2 class="text-xl font-semibold mb-2">Support</h2>
+            <ul class="opacity-70">
+              <ol>
+                Customer Services
+              </ol>
+              <ol>
+                Accessibility
+              </ol>
+              <ol>
+                Contact Us
+              </ol>
+            </ul>
+          </div>
+        </div>
+        <div class="flex items-center justify-between mt-8 text-white/70">
+          <p>
+            @20201 Innovate.All rights reserved. Privacy policy Terms &
+            condition
+          </p>
+          <div class="flex items-center justify-between gap-10">
+            <p>Privacy policy</p>
+            <p>Terms & condition</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
   </div>
 </html>
